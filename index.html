@@ -7,90 +7,115 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="keywords" content="sergey, cv, resume">
    <meta name="description" content="Это сайт - резюме Сергея Ездакова">
+   <link rel="stylesheet" href="./style.css">
    <title>Sergey Resume</title>
 </head>
 
 <body>
-   <img src="./avatar.jpg" alt="">
 
-   <h1>Сергей Ездаков</h1>
+   <div class="container">
+      <div class="info">
+         <img src="./avatar.jpg" alt="Сергей Ездаков" class="avatar">
 
-   <p>Я начинающий программист, занимающийся версткой сайта на <strong>HTML и CSS</strong>, а также занимаюсь
-      <strong>JavaScript</strong></p>
+         <div class="info-text">
+            <h1>Сергей Ездаков</h1>
 
-   <p>Я люблю <em>заниматься программированием и постоянно слежу за изменениями в IT сфере</em></p>
+            <p>Я начинающий программист, занимающийся версткой сайта на <strong>HTML и CSS</strong>, а также занимаюсь <strong>JavaScript</strong></p>
 
-   <h4>Список социальных сетей:</h4>
+            <p>Я люблю<em>заниматься программированием и постоянно слежу за изменениями в IT сфере</em></p>
 
-   <a href="https://t.me/ESV2477" target="_blank">Telegram</a>
+            <h4>Список социальных сетей:</h4>
 
-   <a href="https://vk.com/id98074983" target="_blank">ВКонтакте</a>
+            <a href="https://t.me/ESV2477" target="_blank">Telegram</a>
 
-   <h2>Мои хобби:</h2>
-
-   <ol>
-      <li>Программирование</li>
-      <li>Спорт</li>
-      <li>Искусство</li>
-   </ol>
-
-   <h2>Опыт работы</h2>
-
-   <table>
-      <thead>
-         <tr>
-            <th>Название</th>
-            <th>Должность</th>
-            <th>Год</th>
-         </tr>
-      </thead>
-      <tbody>
-         <tr>
-            <td>Госслужба</td>
-            <td>Ведущий специалист</td>
-            <td>1997 - 2016</td>
-         </tr>
-         <tr>
-            <td>Такси</td>
-            <td>Водитель</td>
-            <td>2016 - 2021</td>
-         </tr>
-         <tr>
-            <td>Программирование</td>
-            <td>Frontend</td>
-            <td>2021 - 2022</td>
-         </tr>
-      </tbody>
-
-   </table>
-
-   <br>
-
-   <form>
-
-      <div>
-         <label for="name">Ваше имя:</label>
-         <input type="text" id="name" placeholder="Введите имя">
+            <a href="https://vk.com/id98074983" target="_blank">ВКонтакте</a>
+         </div>
       </div>
+
+
+      <div class="card bg-green">
+         <h2>Мои хобби:</h2>
+
+         <ol class="list">
+            <li>Программирование</li>
+            <li>Спорт</li>
+            <li>Искусство</li>
+         </ol>
+      </div>
+
+      <div class="card bg-red">
+         <h2>Опыт работы</h2>
+
+         <table class="table">
+            <!--<thead>
+               <tr>
+                  <th>Название</th>
+                  <th>Должность</th>
+                  <th>Год</th>
+               </tr>
+            </thead>-->
+            <tbody>
+               <tr>
+                  <td>Госслужба</td>
+                  <td>Ведущий специалист</td>
+                  <td>1997 - 2016</td>
+               </tr>
+               <tr>
+                  <td>Такси</td>
+                  <td>Водитель</td>
+                  <td>2016 - 2021</td>
+               </tr>
+               <tr>
+                  <td>Программирование</td>
+                  <td>Frontend</td>
+                  <td>2021 - 2022</td>
+               </tr>
+            </tbody>
+
+         </table>
+      </div>
+
+      <div class="card bg-yellow">
+         <h2>Мои работы</h2>
+
+         <ul class="link-list">
+            <li><a href="https://vokadze.github.io/portfolio-project/"></a>portfolio-project</li>
+            <li><a href="https://vokadze.github.io/Landing_example/"></a>Landing_example</li>
+            <li><a href="https://vokadze.github.io/01-lost-shirt/index.html"></a>lost-shirt</li>
+            <li><a href=""></a>lost-shirt1</li>
+         </ul>
+      </div>
+
+      <form action="/" class="form">
+         <h2>Связаться со мной</h2>
+
+         <div class="form-row">
+            <div class="form-group">
+               <label for="name">Ваше имя:</label>
+               <input type="text" id="name" placeholder="Введите имя">
+            </div>
+
+            <div class="form-group">
+               <label for="email">Ваш email:</label>
+               <input type="email" id="email" placeholder="Введите email">
+            </div>
+         </div>
+
+         <div class="form-group">
+            <label for="message">Сообщение:</label>
+            <textarea id="message" cols="25" rows="5" placeholder="Введите сообщение..."></textarea>
+         </div>
+
+         <button class="btn" type="submit">Отправить</button>
+
+      </form>
 
       <br>
-
-      <div>
-         <label for="email">Ваш email:</label>
-         <input type="email" id="email" placeholder="Введите email">
-      </div>
-
+      <br>
+      <br>
       <br>
 
-      <div>
-         <label for="message">Сообщение:</label>
-         <br>
-         <textarea id="message" cols="25" rows="5" placeholder="Введите сообщение..."></textarea>
-      </div>
-
-      <button type="submit">Отправить</button>
-
-   </form>
+   </div>
 </body>
 
 </html>
